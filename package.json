@@ -1,0 +1,15 @@
+{
+  "name": "flexbox",
+  "version": "0.0.1",
+  "description": "Flexbox initial setup",
+  "repository": "https://github.com/chandlera/flexbox.git",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
