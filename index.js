@@ -8,7 +8,7 @@ app.get("/", function(req, res) {
   res.redirect('/index.html');
 });
 
-app.use(express.static(publicDir));
+app.use(express.static('public'));
 
 console.log('Simple static server showing %s listening at http://%s:%s', publicDir, hostname, port);
 app.listen(port, hostname);
