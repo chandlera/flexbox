@@ -211,8 +211,18 @@ legend,button::-moz-focus-inner,input::-moz-focus-inner {
 
 /* We start writing out flexbox here. The above is just page setup */
 .container {
-    display:flex;
-    border:10px solid #daa520;
-    min-height:100vh;
-    flex-direction: row;
+  display: flex;
+}
+
+.box {
+  flex: 1;
+  order: 1;
+}
+
+.box3 {
+  order: 2;
+}
+
+.box5 {
+  order: 2;
 }
