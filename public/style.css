@@ -162,27 +162,17 @@ legend,button::-moz-focus-inner,input::-moz-focus-inner {
 /* Some default styles to make each box visible */
 .box {
     color:#fff;
-    font-size:20px;
+    font-size:100px;
     text-align:center;
     text-shadow:4px 4px 0 rgba(0,0,0,0.1);
     padding:10px
 }
 
 /* Colours for each box */
-.box1 {
-    background:#1abc9c
-}
-
-.box2 {
-    background:#3498db
-}
-
-.box3 {
-    background:#9b59b6
-}
-
-.box4 {
-    background:#34495e; }
+.box1 { background:#1abc9c; }
+.box2 { background:#3498db; }
+.box3 { background:#9b59b6; }
+.box4 { background:#34495e;}
 .box5 { background:#f1c40f; }
 .box6 { background:#e67e22; }
 .box7 { background:#e74c3c; }
@@ -193,7 +183,23 @@ legend,button::-moz-focus-inner,input::-moz-focus-inner {
 /* We start writing out flexbox here. The above is just page setup */
 .container {
   display: flex;
-  justify-content: space-around;
+  height: 100vh;
+  align-items: center;
   flex-direction: column;
-  min-height: 100vh;
+}
+
+.box1 {
+  font-size: 30px;
+}
+
+.box2 {
+  font-size: 150px;
+}
+
+.box4 {
+  font-size: 200px;
+}
+
+.box5 {
+  font-size: 10px;
 }
