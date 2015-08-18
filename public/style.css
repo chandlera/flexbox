@@ -185,10 +185,23 @@ legend,button::-moz-focus-inner,input::-moz-focus-inner {
   display: flex;
   border: 10px solid gray;
   height: 100vh;
-  flex-wrap: wrap; /* needed for align-content */
-  align-content: center; /* aligns based off of cross axis */
+  align-items: flex-start;
+
 }
 
 .box {
   width: 33.33%;
+}
+
+.box2 {
+  padding-bottom: 200px;
+}
+
+.box6 {
+  padding-bottom: 0;
+}
+
+.box9 {
+  padding-bottom: 50px;
+  align-self: center;
 }
