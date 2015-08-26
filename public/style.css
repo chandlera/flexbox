@@ -17,68 +17,27 @@ a {
   color:white;
 }
 
-.plan ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.item.large {
+  font-size: 40px;
 }
 
-.plan ul li {
-  border-bottom: 1px solid rgba(0,0,0,0.1);
-  padding:10px;
+.item.small {
+  font-size: 20px;
 }
 
-.plan ul li:last-child {
-  border-bottom: 0;
+.item {
+  background:rgba(255,255,255,0.2);
+  margin:10px;
+  padding:20px;
+  font-size: 30px;
 }
 
-.plan a {
-  text-decoration: none;
-  background:#FEFF00;
-  padding:10px;
-  color:black;
-  border-radius:4px;
-}
-
-
-.plan h2 {
-  text-transform: uppercase;
-  color:white;
-  letter-spacing: 2px;
-  text-shadow:3px 3px 0 rgba(0,0,0,0.1);
-}
-
-.price {
-  font-size: 50px;
-  font-family: serif;
-  margin: 10px 0;
-}
-
-
-.pricing-grid {
-  max-width:750px;
-  margin: 0 auto;
-
-  display: flex;
-  align-items: center;
-}
-
-.plan {
-  background: rgba(255,255,255,0.2);
-  margin: 20px;
-  padding: 20px;
-  border-radius: 4px;
-  text-align: center;
-
-  flex: 1;
+/* Flexbox Starts Here: */
+.elements {
   display: flex;
   flex-wrap: wrap;
 }
 
-.plan > * {
-  flex: 1 1 100%;
-}
-
-.plan .cta {
-  align-self: flex-end;
+.item {
+  flex: 1 1 calc(33.33% - 20px);
 }

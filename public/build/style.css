@@ -18,75 +18,23 @@ a {
   color:white;
 }
 
-.plan ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.item.large {
+  font-size: 40px;
 }
 
-.plan ul li {
-  border-bottom: 1px solid rgba(0,0,0,0.1);
-  padding:10px;
+.item.small {
+  font-size: 20px;
 }
 
-.plan ul li:last-child {
-  border-bottom: 0;
+.item {
+  background:rgba(255,255,255,0.2);
+  margin:10px;
+  padding:20px;
+  font-size: 30px;
 }
 
-.plan a {
-  text-decoration: none;
-  background:#FEFF00;
-  padding:10px;
-  color:black;
-  border-radius:4px;
-}
-
-
-.plan h2 {
-  text-transform: uppercase;
-  color:white;
-  letter-spacing: 2px;
-  text-shadow:3px 3px 0 rgba(0,0,0,0.1);
-}
-
-.price {
-  font-size: 50px;
-  font-family: serif;
-  margin: 10px 0;
-}
-
-
-.pricing-grid {
-  max-width:750px;
-  margin: 0 auto;
-
-  display: -webkit-box;
-
-  display: -webkit-flex;
-
-  display: -ms-flexbox;
-
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.plan {
-  background: rgba(255,255,255,0.2);
-  margin: 20px;
-  padding: 20px;
-  border-radius: 4px;
-  text-align: center;
-
-  -webkit-box-flex: 1;
-
-  -webkit-flex: 1;
-
-      -ms-flex: 1;
-
-          flex: 1;
+/* Flexbox Starts Here: */
+.elements {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -96,15 +44,9 @@ a {
           flex-wrap: wrap;
 }
 
-.plan > * {
+.item {
   -webkit-box-flex: 1;
-  -webkit-flex: 1 1 100%;
-      -ms-flex: 1 1 100%;
-          flex: 1 1 100%;
-}
-
-.plan .cta {
-  -webkit-align-self: flex-end;
-      -ms-flex-item-align: end;
-          align-self: flex-end;
+  -webkit-flex: 1 1 calc(33.33% - 20px);
+      -ms-flex: 1 1 calc(33.33% - 20px);
+          flex: 1 1 calc(33.33% - 20px);
 }
